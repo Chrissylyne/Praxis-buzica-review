@@ -2,10 +2,30 @@
 <html lang="de">
 <head>
   <meta charset="utf-8">
-  <title>Praxis Demo</title>
+  <title>Bewertung — Praxis Dr. Buzica</title>
+  <meta name="description" content="Vielen Dank für Ihren Besuch. Bewerten Sie die Praxis Dr. Buzica in 60 Sekunden.">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    :root{--accent:#1f7a73;--accent2:#d96b3a;--text:#222}
+    body{font-family:Inter,system-ui,Arial,Helvetica,sans-serif;margin:0;background:#fff;color:var(--text);display:flex;align-items:center;justify-content:center;min-height:100vh;padding:20px}
+    .card{max-width:760px;padding:28px;border-radius:10px;border:1px solid #eee;box-shadow:0 8px 24px rgba(0,0,0,.06)}
+    h1{margin:0 0 8px;color:var(--accent);font-size:28px}
+    p{margin:0 0 16px;line-height:1.45}
+    .btn{display:inline-block;background:var(--accent);color:#fff;padding:12px 18px;border-radius:8px;text-decoration:none;font-weight:600}
+    .small{color:#666;font-size:14px;margin-top:12px}
+    footer{margin-top:18px;font-size:13px;color:#666}
+  </style>
 </head>
 <body>
-  <h1>Demo — Praxis Dr. Buzica</h1>
-  <p>Seite funktioniert. Test GitHub Pages.</p>
+  <main class="card" role="main" aria-labelledby="title">
+    <h1 id="title">Vielen Dank für Ihren Besuch</h1>
+    <p>Wenn Sie mit Ihrer Behandlung zufrieden waren, würden wir uns sehr über eine kurze Google-Bewertung (ca. 60 Sekunden) freuen. Ihre Rückmeldung hilft uns und anderen Patient*innen.</p>
+
+    <!-- Bouton : remplace l'URL ci-dessous par le lien Google write review ou bit.ly -->
+    <a class="btn" id="cta" href="https://search.google.com/local/writereview?placeid=ChIJzZmjvyzNl0cRPuBvmalPRMI" target="_blank" rel="noopener">Jetzt Bewertung schreiben</a>
+
+    <p class="small">Tipp: Scannen Sie den QR-Code im Wartezimmer oder klicken Sie auf „Jetzt Bewertung schreiben“.</p>
+    <footer>Bei Fragen sprechen Sie uns gern am Empfang an. — Praxis Dr. Buzica</footer>
+  </main>
 </body>
 </html>
